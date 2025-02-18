@@ -42,7 +42,7 @@
   .carousel-container {
     width: 90%;
     max-width: 1200px;
-    height: 300px;
+    height: 400px; /* 300px에서 400px로 증가 */
     background-color: #FFE5D4;
     border-radius: 100px;
     display: flex;
@@ -51,7 +51,7 @@
     overflow: hidden;
     position: relative;
     padding: 0 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
   .carousel-content {
@@ -98,7 +98,7 @@
   /* 반응형 디자인 */
   @media (max-width: 768px) {
     .carousel-container {
-      height: 200px;
+      height: 300px;
       border-radius: 50px;
     }
   
