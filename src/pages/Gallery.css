@@ -1,0 +1,118 @@
+.gallery-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .gallery-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .carousels-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* 간격 증가 */
+    padding: 80px 0; /* 상하 패딩 */
+    width: 100%;
+    margin-top: 120px; /* 위쪽 여백 대폭 증가 */
+  }
+  
+  .carousel-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .carousel-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .carousel-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 300px;
+    background-color: #FFE5D4;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 추가 */
+  }
+  
+  .carousel-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #666;
+    z-index: 3;
+    transition: color 0.3s;
+  }
+  
+  .carousel-button:hover {
+    color: #333;
+  }
+  
+  .carousel-button.prev {
+    left: 30px;
+  }
+  
+  .carousel-button.next {
+    right: 30px;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: 200px;
+      border-radius: 50px;
+    }
+  
+    .carousel-button.prev {
+      left: 15px;
+    }
+  
+    .carousel-button.next {
+      right: 15px;
+    }
+  
+    .carousels-wrapper {
+      gap: 30px; /* 모바일에서도 간격 유지 */
+      padding: 40px 0; /* 모바일에서도 패딩 유지 */
+      margin-top: 80px; /* 모바일에서도 상단 여백 늘림 */
+    }
+  }
