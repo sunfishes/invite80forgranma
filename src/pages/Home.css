@@ -14,4 +14,5 @@
   position: absolute; /* 이미지 절대 위치 지정 */
   top: 0;
   left: 0;
+  image-rendering: crisp-edges;
 }

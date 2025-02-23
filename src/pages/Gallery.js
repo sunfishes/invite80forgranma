@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Gallery.css';
-import GalleryImage from '../images/004.png';
+import GalleryImage from '../images/Gallery.png';
 import Gallery1 from '../images/Gallery1.jpg';
 import Gallery2 from '../images/Gallery2.jpg';
 import Gallery3 from '../images/Gallery3.jpg';
@@ -11,6 +11,8 @@ import Gallery7 from '../images/Gallery7.jpg';
 import Gallery8 from '../images/Gallery8.jpg';
 import Gallery9 from '../images/Gallery9.jpg';
 import Gallery10 from '../images/Gallery10.jpg';
+import Gallery11 from '../images/Gallery11.jpg';
+import Gallery12 from '../images/Gallery12.jpg';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Carousel = ({ images, title }) => {
@@ -75,7 +77,8 @@ const Gallery = () => {
     Gallery2,
     Gallery3,
     Gallery4,
-    Gallery5
+    Gallery5,
+    Gallery11
   ];
 
   const secondSetImages = [
@@ -83,7 +86,8 @@ const Gallery = () => {
     Gallery7,
     Gallery8,
     Gallery9,
-    Gallery10
+    Gallery10,
+    Gallery12
   ];
 
   return (

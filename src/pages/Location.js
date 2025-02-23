@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Location.css';
-import LocationImage from '../images/003.png';
+import LocationImage from '../images/location6.png';
 
 const Location = () => {
   const mapRef = useRef(null);
