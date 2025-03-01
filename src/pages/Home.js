@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css'; // Home.css 불러오기
-import flowerImage from '../images/flower7.png';
+import flowerImage from '../images/flower8.png';
 
 const Home = () => {
   return (
